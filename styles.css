@@ -1,0 +1,92 @@
+/* styles.css */
+/* styles.css */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color:rgb(55, 181, 93);
+    margin: 0;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    width: 100%;
+    max-width: 1200px;
+}
+
+.quote-table {
+    background-color: #edd756;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    text-align: center;
+    width: 30%;
+    perspective: 1000px;
+    transform-style: preserve-3d;
+    transition: transform 0.3s, box-shadow 0.3s;
+    position: relative;
+}
+
+.quote-table:hover {
+    transform: rotateY(10deg) rotateX(5deg);
+    box-shadow: 0 8px 16px rgba(250, 0, 0, 0.3);
+}
+
+.quote {
+    display: none;
+    margin: 20px 0;
+    font-size: 1.2em;
+    color: #333;
+    transition: opacity 0.5s ease;
+}
+
+.warrior-image {
+    margin-top: 20px;
+}
+
+.warrior-image img {
+    max-width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+button {
+    background-color: #008cba;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+button:hover {
+    background-color: #005f5f;
+    transform: scale(1.1);
+}
+
+.map-container {
+    text-align: center;
+    margin-top: 20px;
+    perspective: 1000px;
+    transform-style: preserve-3d;
+}
+
+.map-container img {
+    width: 80%;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.map-container img:hover {
+    transform: rotateY(10deg) rotateX(5deg);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+}
